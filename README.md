@@ -78,6 +78,9 @@ Se implementa cada técnica algorítmica sobre el mismo problema y se comparan:
 - Tiempo de ejecución
 - Complejidad computacional
 - Calidad de la solución
+- ¿Solución óptima?
+-  Tiempo real (n=100)
+- Tiempo real (n=1000) 
 
 ---
 
