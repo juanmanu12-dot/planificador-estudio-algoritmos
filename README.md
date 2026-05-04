@@ -1,6 +1,6 @@
-# 📚 Planificador de Estudio con Algoritmos
+#  Planificador de Estudio con Algoritmos
 
-## 🧠 Descripción
+##  Descripción
 
 Este proyecto consiste en el desarrollo de un sistema de planificación de estudio óptimo, utilizando diferentes técnicas de diseño de algoritmos.
 
@@ -8,7 +8,7 @@ El problema se basa en organizar un conjunto de temas de distintas materias, con
 
 ---
 
-## 🎯 Objetivo
+##  Objetivo
 
 Comparar distintas técnicas algorítmicas para resolver un mismo problema de optimización, evaluando su eficiencia, complejidad y calidad de solución.
 
@@ -24,7 +24,7 @@ Comparar distintas técnicas algorítmicas para resolver un mismo problema de op
 
 ---
 
-## 📥 Entradas del sistema
+##  Entradas del sistema
 
 - Lista de temas:
   - Materia
@@ -38,7 +38,7 @@ Comparar distintas técnicas algorítmicas para resolver un mismo problema de op
 
 ---
 
-## 📤 Salidas del sistema
+##  Salidas del sistema
 
 - Plan de estudio organizado por días
 - Distribución de horas por tema
@@ -46,7 +46,7 @@ Comparar distintas técnicas algorítmicas para resolver un mismo problema de op
 
 ---
 
-## 📂 Estructura del proyecto
+##  Estructura del proyecto
 
 src/
 ├── fuerza_bruta.py
@@ -63,7 +63,7 @@ datos/
 
 ---
 
-## 📊 Metodología
+##  Metodología
 
 Se implementa cada técnica algorítmica sobre el mismo problema y se comparan:
 
