@@ -81,7 +81,5 @@ Se implementa cada técnica algorítmica sobre el mismo problema y se comparan:
 
 ---
 
-## 🚀 Cómo ejecutar
+##  Cómo ejecutar cada codigo
 
-```bash
-python src/fuerza_bruta.py
