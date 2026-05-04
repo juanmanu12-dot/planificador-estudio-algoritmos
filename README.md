@@ -48,21 +48,29 @@ Comparar distintas técnicas algorítmicas para resolver un mismo problema de op
 
 ##  Estructura del proyecto
 
-src/
-├── fuerza_bruta.py
-├── recursivo.py
-├── greedy.py
-├── backtracking.py
-├── divide_y_venceras.py
-└── comparativa.py
-
-datos/
-├── caso_pequeno.txt
-├── caso_mediano.txt
-└── caso_grande.txt
+```
+trabajo-final/
+├── README.md                  
+├── datos/                     
+│   ├── caso_pequeno.txt
+│   ├── caso_mediano.txt
+│   └── caso_grande.txt
+├── src/
+│   ├── fuerza_bruta.py
+│   ├── recursivo.py
+│   ├── greedy.py
+│   ├── backtracking.py
+│   ├── divide_y_venceras.py
+│   └── comparativa.py         
+├── docs/
+│   ├── entrega1.pdf
+│   ├── entrega2.pdf
+│   └── entrega3_final.pdf
+└── presentacion/
+    └── presentacion_final.pdf
+```
 
 ---
-
 ##  Metodología
 
 Se implementa cada técnica algorítmica sobre el mismo problema y se comparan:
