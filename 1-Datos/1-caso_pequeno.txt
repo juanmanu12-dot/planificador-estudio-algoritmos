@@ -1,0 +1,5 @@
+Matemáticas,Integrales,5,3,3
+Física,Cinemática,4,2,2
+Química,Átomos,3,2,4
+dias=4
+horas_por_dia=4

@@ -1,0 +1,8 @@
+Matemáticas,Derivadas,5,3,5
+Matemáticas,Integrales,5,4,7
+Física,Dinámica,4,3,6
+Química,Orgánica,3,2,8
+Inglés,Reading,2,2,4
+Programación,Listas,4,3,5
+dias=8
+horas_por_dia=5

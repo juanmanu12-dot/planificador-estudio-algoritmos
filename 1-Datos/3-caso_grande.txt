@@ -1,0 +1,12 @@
+Matemáticas,Álgebra,5,3,6
+Matemáticas,Cálculo,5,4,10
+Física,Ondas,4,3,7
+Física,Termodinámica,5,4,9
+Química,Enlaces,3,2,5
+Química,Reacciones,4,3,8
+Programación,Recursión,5,3,6
+Programación,Estructuras,4,4,9
+Inglés,Writing,2,2,6
+Historia,Edad Media,3,2,7
+dias=10
+horas_por_dia=6
