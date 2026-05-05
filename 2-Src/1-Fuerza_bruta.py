@@ -139,9 +139,9 @@ def imprimir_plan(nombre_caso, plan, completados, fuera, total_permutaciones):
 # ──────────────────────────────────────────────
 
 archivos = [
-    ("Pequeño",  "../1-Datos/1-caso_pequeno.txt"),
-    ("Mediano",  "../1-Datos/2-caso_mediano.txt"),
-    ("Grande",   "../1-Datos/3-caso_grande.txt"),
+    ("Pequeño",  "1-Datos/1-caso_pequeno.txt"),
+    ("Mediano",  "1-Datos/2-caso_mediano.txt"),
+    ("Grande",   "1-Datos/3-caso_grande.txt"),
 ]
 
 for nombre, ruta in archivos:
