@@ -86,3 +86,5 @@ Se implementa cada técnica algorítmica sobre el mismo problema y se comparan:
 
 ##  Cómo ejecutar cada codigo
 
+- Fuerza bruta: python 2-Src\1-Fuerza_bruta.py
+
