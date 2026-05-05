@@ -55,42 +55,8 @@ def generar_permutaciones(lista):
 
 
 # ──────────────────────────────────────────────
-# EVALUAR UN PLAN
-# ──────────────────────────────────────────────
-
-def evaluar_plan(permutacion, dias, horas_por_dia):
-    horas_dia = [0] * (dias + 1)
-    plan = []
-    for d in range(dias + 1):
-        plan.append([])
-
-    completados = 0
-    fuera_de_plazo = 0
-
-    for tema in permutacion:
-        materia, nombre, dificultad, horas, deadline = tema
-        asignado = False
-
-        for dia in range(1, dias + 1):
-            if horas_dia[dia] + horas <= horas_por_dia:
-                horas_dia[dia] += horas
-                plan[dia].append((materia, nombre, horas))
-                if dia <= deadline:
-                    completados += 1
-                else:
-                    fuera_de_plazo += 1
-                asignado = True
-                break
-
-        if not asignado:
-            fuera_de_plazo += 1
-
-    return plan, completados, fuera_de_plazo
-
-
-
 # FUERZA BRUTA
-
+# ──────────────────────────────────────────────
 
 def fuerza_bruta(temas, dias, horas_por_dia):
     mejor_plan = None
@@ -102,22 +68,48 @@ def fuerza_bruta(temas, dias, horas_por_dia):
 
     for perm in todas:
         total_permutaciones += 1
-        plan, completados, fuera = evaluar_plan(perm, dias, horas_por_dia)
+
+        
+        horas_dia = [0] * (dias + 1)
+        plan = []
+        for d in range(dias + 1):
+            plan.append([])
+
+        completados = 0
+        fuera_de_plazo = 0
+
+        for tema in perm:
+            materia, nombre, dificultad, horas, deadline = tema
+            asignado = False
+
+            for dia in range(1, dias + 1):
+                if horas_dia[dia] + horas <= horas_por_dia:
+                    horas_dia[dia] += horas
+                    plan[dia].append((materia, nombre, horas))
+                    if dia <= deadline:
+                        completados += 1
+                    else:
+                        fuera_de_plazo += 1
+                    asignado = True
+                    break
+
+            if not asignado:
+                fuera_de_plazo += 1
 
         if completados > mejor_completados:
             mejor_completados = completados
-            mejor_fuera = fuera
+            mejor_fuera = fuera_de_plazo
             mejor_plan = plan
-        elif completados == mejor_completados and fuera < mejor_fuera:
-            mejor_fuera = fuera
+        elif completados == mejor_completados and fuera_de_plazo < mejor_fuera:
+            mejor_fuera = fuera_de_plazo
             mejor_plan = plan
 
     return mejor_plan, mejor_completados, mejor_fuera, total_permutaciones
 
 
-
+# ──────────────────────────────────────────────
 # IMPRIMIR RESULTADOS
-
+# ──────────────────────────────────────────────
 
 def imprimir_plan(nombre_caso, plan, completados, fuera, total_permutaciones):
     print("=" * 50)
@@ -149,3 +141,8 @@ for nombre, ruta in archivos:
     temas, dias, hpd = leer_caso(ruta)
     mejor_plan, completados, fuera, total_perms = fuerza_bruta(temas, dias, hpd)
     imprimir_plan(nombre, mejor_plan, completados, fuera, total_perms)
+
+
+
+
+
