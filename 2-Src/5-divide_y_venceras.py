@@ -83,3 +83,50 @@ def divide_y_venceras(temas, dias, horas_por_dia):
         return {}
     return _planificar_recursivo(temas, 1, dias, horas_por_dia)
 
+
+def calcular_indicadores(plan, temas, horas_por_dia):
+    horas_asignadas = {}
+    for sesiones in plan.values():
+        for nombre, horas in sesiones:
+            horas_asignadas[nombre] = horas_asignadas.get(nombre, 0) + horas
+
+    total_horas_req = sum(t[3] for t in temas)
+    total_horas_asig = sum(horas_asignadas.values())
+    total_horas_disp = len(plan) * horas_por_dia
+
+    temas_completos = 0
+    temas_parciales = 0
+    temas_omitidos = 0
+    temas_deadline_ok = 0
+
+    for _, nombre, _, horas_req, deadline in temas:
+        asignado = horas_asignadas.get(nombre, 0)
+        if asignado == 0:
+            temas_omitidos += 1
+        elif asignado < horas_req:
+            temas_parciales += 1
+        else:
+            temas_completos += 1
+
+        if asignado > 0:
+            acum, dia_fin_tema = 0, None
+            for d in sorted(plan.keys()):
+                for n, h in plan[d]:
+                    if n == nombre:
+                        acum += h
+                if acum >= horas_req and dia_fin_tema is None:
+                    dia_fin_tema = d
+            if dia_fin_tema is not None and dia_fin_tema <= deadline:
+                temas_deadline_ok += 1
+
+    return {
+        "total_horas_requeridas": total_horas_req,
+        "total_horas_asignadas": total_horas_asig,
+        "total_horas_disponibles": total_horas_disp,
+        "temas_completos": temas_completos,
+        "temas_parciales": temas_parciales,
+        "temas_omitidos": temas_omitidos,
+        "temas_deadline_ok": temas_deadline_ok,
+        "horas_asignadas": horas_asignadas,
+    }
+
