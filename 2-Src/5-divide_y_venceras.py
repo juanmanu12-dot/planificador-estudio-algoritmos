@@ -130,3 +130,50 @@ def calcular_indicadores(plan, temas, horas_por_dia):
         "horas_asignadas": horas_asignadas,
     }
 
+
+# ── PRESENTACION DE RESULTADOS ────────────────────────────────────────────────
+
+def imprimir_plan(plan, temas, nombre_caso, tiempo_ms, indicadores):
+    SEP = "=" * 64
+
+    print(f"\n{SEP}")
+    print(f"  DIVIDE Y VENCERAS  —  {nombre_caso.upper()}")
+    print(SEP)
+
+    print("\n  PLAN DE ESTUDIO POR DIAS")
+    print(f"  {'-' * 62}")
+    for dia in sorted(plan.keys()):
+        sesiones = plan[dia]
+        total_dia = sum(h for _, h in sesiones)
+        if sesiones:
+            items = ",  ".join(f"{n} ({h}h)" for n, h in sesiones)
+            print(f"  Dia {dia:2d}  [{total_dia:2d}h]  ->  {items}")
+        else:
+            print(f"  Dia {dia:2d}  [ 0h]  ->  (libre)")
+
+    print(f"\n  DISTRIBUCION DE HORAS POR TEMA")
+    print(f"  {'Tema':<22} {'Materia':<16} {'Req':>4} {'Asig':>5} {'DL':>4}  Estado")
+    print(f"  {'-' * 22} {'-' * 16} {'-' * 4} {'-' * 5} {'-' * 4}  {'-' * 10}")
+    for materia, nombre, _, horas_req, deadline in temas:
+        asignado = indicadores["horas_asignadas"].get(nombre, 0)
+        estado = "COMPLETO" if asignado >= horas_req else ("PARCIAL" if asignado > 0 else "OMITIDO")
+        print(f"  {nombre:<22} {materia:<16} {horas_req:>4} {asignado:>5} {deadline:>4}  {estado}")
+
+    ind = indicadores
+    n_temas = len(temas)
+    cobertura = (ind["total_horas_asignadas"] / ind["total_horas_requeridas"] * 100
+                 if ind["total_horas_requeridas"] > 0 else 0.0)
+    dl_pct = (ind["temas_deadline_ok"] / n_temas * 100 if n_temas > 0 else 0.0)
+
+    print(f"\n  INDICADORES DE CUMPLIMIENTO")
+    print(f"  {'-' * 62}")
+    print(f"  Horas disponibles     : {ind['total_horas_disponibles']:>5}")
+    print(f"  Horas requeridas      : {ind['total_horas_requeridas']:>5}")
+    print(f"  Horas asignadas       : {ind['total_horas_asignadas']:>5}")
+    print(f"  Cobertura de horas    : {cobertura:>5.1f}%")
+    print(f"  Temas completos       : {ind['temas_completos']:>5}  /  {n_temas}")
+    print(f"  Temas parciales       : {ind['temas_parciales']:>5}  /  {n_temas}")
+    print(f"  Temas omitidos        : {ind['temas_omitidos']:>5}  /  {n_temas}")
+    print(f"  Cumplimiento deadline : {ind['temas_deadline_ok']:>3}/{n_temas}  ({dl_pct:.1f}%)")
+    print(f"  Tiempo de ejecucion   : {tiempo_ms:.6f} ms")
+
