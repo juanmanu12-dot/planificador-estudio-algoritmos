@@ -177,3 +177,18 @@ def imprimir_plan(plan, temas, nombre_caso, tiempo_ms, indicadores):
     print(f"  Cumplimiento deadline : {ind['temas_deadline_ok']:>3}/{n_temas}  ({dl_pct:.1f}%)")
     print(f"  Tiempo de ejecucion   : {tiempo_ms:.6f} ms")
 
+
+# ── EJECUCION POR CASO ────────────────────────────────────────────────────────
+
+def ejecutar_caso(ruta, nombre_caso):
+    temas, dias, horas_por_dia = leer_caso(ruta)
+
+    inicio = time.perf_counter()
+    plan = divide_y_venceras(temas, dias, horas_por_dia)
+    fin = time.perf_counter()
+
+    tiempo_ms = (fin - inicio) * 1000
+    indicadores = calcular_indicadores(plan, temas, horas_por_dia)
+    imprimir_plan(plan, temas, nombre_caso, tiempo_ms, indicadores)
+
+    return len(temas), tiempo_ms
