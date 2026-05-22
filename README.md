@@ -21,7 +21,7 @@ El objetivo principal es **comparar cinco técnicas algorítmicas** aplicadas al
 | 1 | Fuerza Bruta | O(n! · n) |  Sí — revisa todo |  No |
 | 2 | Recursivo | O(días^n) |  Sí — explora todo |  No |
 | 3 | Greedy | O(n log n) |  No garantizado |  Sí |
-| 4 | Backtracking | O(días^n) + poda |  Sí — poda ramas imposibles | ❌ No |
+| 4 | Backtracking | O(días^n) + poda |  Sí — poda ramas imposibles |  No |
 | 5 | Divide y Vencerás | O(n log n) |  Aproximada |  Sí |
 
 > **¿Óptima significa rápida?** No. Una técnica es óptima si garantiza la mejor solución posible cuando termina de ejecutar. Fuerza Bruta, Recursivo y Backtracking son óptimas porque no se les escapa ninguna combinación — pero para n grande tardan años. Greedy siempre termina rápido pero puede perder la mejor solución.
