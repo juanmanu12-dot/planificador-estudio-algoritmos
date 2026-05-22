@@ -1,6 +1,6 @@
 # Sistema de Planificación Óptima de Estudio con Restricciones
 
-> **Análisis y Diseño de Algoritmos — EAFIT**  
+> **Análisis y Diseño de Algoritmos **  
 > Docente: Juan Esteban Gómez Tirado  
 > Integrantes: Juan Manuel Moreno Muñoz · Andres Felipe Ortega Solano · Juan Esteban Vallejo
 
