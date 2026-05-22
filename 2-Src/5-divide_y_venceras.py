@@ -1,6 +1,4 @@
 import time
-import math
-import os
 
 
 # ── LECTURA DE CASOS DE PRUEBA ────────────────────────────────────────────────
@@ -84,111 +82,78 @@ def divide_y_venceras(temas, dias, horas_por_dia):
     return _planificar_recursivo(temas, 1, dias, horas_por_dia)
 
 
-def calcular_indicadores(plan, temas, horas_por_dia):
+def calcular_completados(plan, temas):
     horas_asignadas = {}
-    for sesiones in plan.values():
-        for nombre, horas in sesiones:
+    ultimo_dia = {}
+    for d in sorted(plan.keys()):
+        for nombre, horas in plan[d]:
             horas_asignadas[nombre] = horas_asignadas.get(nombre, 0) + horas
+            ultimo_dia[nombre] = d
 
-    total_horas_req = sum(t[3] for t in temas)
-    total_horas_asig = sum(horas_asignadas.values())
-    total_horas_disp = len(plan) * horas_por_dia
-
-    temas_completos = 0
-    temas_parciales = 0
-    temas_omitidos = 0
-    temas_deadline_ok = 0
-
+    completados = 0
+    fuera = 0
     for _, nombre, _, horas_req, deadline in temas:
-        asignado = horas_asignadas.get(nombre, 0)
-        if asignado == 0:
-            temas_omitidos += 1
-        elif asignado < horas_req:
-            temas_parciales += 1
+        asig = horas_asignadas.get(nombre, 0)
+        if asig >= horas_req:
+            if ultimo_dia.get(nombre, 999) <= deadline:
+                completados += 1
+            else:
+                fuera += 1
         else:
-            temas_completos += 1
-
-        if asignado > 0:
-            acum, dia_fin_tema = 0, None
-            for d in sorted(plan.keys()):
-                for n, h in plan[d]:
-                    if n == nombre:
-                        acum += h
-                if acum >= horas_req and dia_fin_tema is None:
-                    dia_fin_tema = d
-            if dia_fin_tema is not None and dia_fin_tema <= deadline:
-                temas_deadline_ok += 1
-
-    return {
-        "total_horas_requeridas": total_horas_req,
-        "total_horas_asignadas": total_horas_asig,
-        "total_horas_disponibles": total_horas_disp,
-        "temas_completos": temas_completos,
-        "temas_parciales": temas_parciales,
-        "temas_omitidos": temas_omitidos,
-        "temas_deadline_ok": temas_deadline_ok,
-        "horas_asignadas": horas_asignadas,
-    }
+            fuera += 1
+    return completados, fuera, horas_asignadas
 
 
-# ── PRESENTACION DE RESULTADOS ────────────────────────────────────────────────
+# ── IMPRIMIR RESULTADOS ───────────────────────────────────────────────────────
 
-def imprimir_plan(plan, temas, nombre_caso, tiempo_ms, indicadores):
-    SEP = "=" * 64
-
-    print(f"\n{SEP}")
-    print(f"  DIVIDE Y VENCERAS  —  {nombre_caso.upper()}")
-    print(SEP)
-
-    print("\n  PLAN DE ESTUDIO POR DIAS")
-    print(f"  {'-' * 62}")
+def imprimir_plan(nombre_caso, plan, temas, completados, fuera, tiempo_ms):
+    print("=" * 50)
+    print("  CASO DIVIDE Y VENCERAS:", nombre_caso)
+    print("=" * 50)
     for dia in sorted(plan.keys()):
-        sesiones = plan[dia]
-        total_dia = sum(h for _, h in sesiones)
-        if sesiones:
-            items = ",  ".join(f"{n} ({h}h)" for n, h in sesiones)
-            print(f"  Dia {dia:2d}  [{total_dia:2d}h]  ->  {items}")
-        else:
-            print(f"  Dia {dia:2d}  [ 0h]  ->  (libre)")
-
-    print(f"\n  DISTRIBUCION DE HORAS POR TEMA")
-    print(f"  {'Tema':<22} {'Materia':<16} {'Req':>4} {'Asig':>5} {'DL':>4}  Estado")
-    print(f"  {'-' * 22} {'-' * 16} {'-' * 4} {'-' * 5} {'-' * 4}  {'-' * 10}")
-    for materia, nombre, _, horas_req, deadline in temas:
-        asignado = indicadores["horas_asignadas"].get(nombre, 0)
-        estado = "COMPLETO" if asignado >= horas_req else ("PARCIAL" if asignado > 0 else "OMITIDO")
-        print(f"  {nombre:<22} {materia:<16} {horas_req:>4} {asignado:>5} {deadline:>4}  {estado}")
-
-    ind = indicadores
-    n_temas = len(temas)
-    cobertura = (ind["total_horas_asignadas"] / ind["total_horas_requeridas"] * 100
-                 if ind["total_horas_requeridas"] > 0 else 0.0)
-    dl_pct = (ind["temas_deadline_ok"] / n_temas * 100 if n_temas > 0 else 0.0)
-
-    print(f"\n  INDICADORES DE CUMPLIMIENTO")
-    print(f"  {'-' * 62}")
-    print(f"  Horas disponibles     : {ind['total_horas_disponibles']:>5}")
-    print(f"  Horas requeridas      : {ind['total_horas_requeridas']:>5}")
-    print(f"  Horas asignadas       : {ind['total_horas_asignadas']:>5}")
-    print(f"  Cobertura de horas    : {cobertura:>5.1f}%")
-    print(f"  Temas completos       : {ind['temas_completos']:>5}  /  {n_temas}")
-    print(f"  Temas parciales       : {ind['temas_parciales']:>5}  /  {n_temas}")
-    print(f"  Temas omitidos        : {ind['temas_omitidos']:>5}  /  {n_temas}")
-    print(f"  Cumplimiento deadline : {ind['temas_deadline_ok']:>3}/{n_temas}  ({dl_pct:.1f}%)")
-    print(f"  Tiempo de ejecucion   : {tiempo_ms:.6f} ms")
+        if plan[dia]:
+            print("\n  Dia", dia, ":")
+            for nombre, horas in plan[dia]:
+                print("    " + nombre + " - " + str(horas) + "h")
+    print("\n  Completados a tiempo :", completados)
+    print("  Fuera de plazo       :", fuera)
+    print("  Tiempo de ejecucion  : {:.6f} ms".format(tiempo_ms))
+    print()
 
 
-# ── EJECUCION POR CASO ────────────────────────────────────────────────────────
+# ── MAIN ─────────────────────────────────────────────────────────────────────
 
-def ejecutar_caso(ruta, nombre_caso):
-    temas, dias, horas_por_dia = leer_caso(ruta)
+archivos = [
+    ("Pequeño", "1-Datos/1-caso_pequeno.txt"),
+    ("Mediano", "1-Datos/2-caso_mediano.txt"),
+    ("Grande",  "1-Datos/3-caso_grande.txt"),
+]
 
+for nombre, ruta in archivos:
+    print("\nEjecutando caso", nombre, "...")
+    temas, dias, hpd = leer_caso(ruta)
     inicio = time.perf_counter()
-    plan = divide_y_venceras(temas, dias, horas_por_dia)
+    plan = divide_y_venceras(temas, dias, hpd)
     fin = time.perf_counter()
-
     tiempo_ms = (fin - inicio) * 1000
-    indicadores = calcular_indicadores(plan, temas, horas_por_dia)
-    imprimir_plan(plan, temas, nombre_caso, tiempo_ms, indicadores)
+    completados, fuera, _ = calcular_completados(plan, temas)
+    imprimir_plan(nombre, plan, temas, completados, fuera, tiempo_ms)
 
-    return len(temas), tiempo_ms
+
+# ── CASOS GRANDES (n=100 y n=1000) ───────────────────────────────────────────
+# DyV es O(n log n) — escala perfectamente.
+
+casos_grandes = [
+    ("n=100",  "1-Datos/4-caso_100.txt"),
+    ("n=1000", "1-Datos/5-caso_1000.txt"),
+]
+
+for nombre, ruta in casos_grandes:
+    print("\nEjecutando caso", nombre, "...")
+    temas, dias, hpd = leer_caso(ruta)
+    inicio = time.perf_counter()
+    plan = divide_y_venceras(temas, dias, hpd)
+    fin = time.perf_counter()
+    tiempo_ms = (fin - inicio) * 1000
+    completados, fuera, _ = calcular_completados(plan, temas)
+    imprimir_plan(nombre, plan, temas, completados, fuera, tiempo_ms)
