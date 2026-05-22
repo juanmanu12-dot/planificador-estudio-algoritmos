@@ -1,3 +1,5 @@
+import time
+
 def leer_caso(ruta):
     temas = []
     dias = 0
@@ -71,7 +73,7 @@ def backtracking_inicio(temas, dias, hpd):
     resolver_backtracking(temas, 0, dias, hpd, horas_dia, plan_actual, mejor_estado)
     return mejor_estado["plan"], mejor_estado["completados"], mejor_estado["fuera"]
 
-def imprimir_plan(nombre_caso, plan, completados, fuera):
+def imprimir_plan(nombre_caso, plan, completados, fuera, tiempo_ms):
     print("=" * 50)
     print("  CASO BACKTRACKING:", nombre_caso)
     print("=" * 50)
@@ -83,6 +85,7 @@ def imprimir_plan(nombre_caso, plan, completados, fuera):
                     print("    [" + item[0] + "] " + item[1] + " - " + str(item[2]) + "h")
     print("\n  Completados a tiempo :", completados)
     print("  Fuera de plazo       :", fuera)
+    print("  Tiempo de ejecucion  : {:.6f} ms".format(tiempo_ms))
     print()
 
 archivos = [
@@ -94,5 +97,31 @@ archivos = [
 for nombre, ruta in archivos:
     print("Procesando " + nombre + "...")
     temas, dias, hpd = leer_caso(ruta)
+    inicio = time.perf_counter()
     mejor_plan, comp, fuera = backtracking_inicio(temas, dias, hpd)
-    imprimir_plan(nombre, mejor_plan, comp, fuera)
+    fin = time.perf_counter()
+    tiempo_ms = (fin - inicio) * 1000
+    imprimir_plan(nombre, mejor_plan, comp, fuera, tiempo_ms)
+
+# ──────────────────────────────────────────────
+# CASOS GRANDES (n=100 y n=1000)
+# Backtracking con poda mejora el peor caso O(dias^n),
+# pero sigue siendo impracticable para n grande.
+# ──────────────────────────────────────────────
+
+casos_grandes = [
+    ("n=100",  "1-Datos/4-caso_100.txt"),
+    ("n=1000", "1-Datos/5-caso_1000.txt"),
+]
+
+for nombre, ruta in casos_grandes:
+    temas, dias, hpd = leer_caso(ruta)
+    n = len(temas)
+    print("=" * 50)
+    print("  CASO BACKTRACKING:", nombre)
+    print("=" * 50)
+    print("\n  Backtracking es IMPRACTICABLE para n =", n)
+    print("  Complejidad peor caso : O(dias^n) con poda")
+    print("  Tiempo estimado       : impracticable")
+    print("  Resultado             : N/A")
+    print()

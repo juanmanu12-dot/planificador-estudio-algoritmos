@@ -1,3 +1,5 @@
+import time
+
 def leer_caso(ruta):
     temas = []
     dias = 0
@@ -24,7 +26,7 @@ def leer_caso(ruta):
 
 def algoritmo_greedy(temas, dias, horas_por_dia):
     temas_ordenados = sorted(temas, key=lambda x: (x[4], -x[2]))
-    
+
     horas_dia = [0] * (dias + 1)
     plan = [[] for _ in range(dias + 1)]
     completados = 0
@@ -45,10 +47,10 @@ def algoritmo_greedy(temas, dias, horas_por_dia):
                 break
         if not asignado:
             fuera_de_plazo += 1
-            
+
     return plan, completados, fuera_de_plazo
 
-def imprimir_plan(nombre_caso, plan, completados, fuera):
+def imprimir_plan(nombre_caso, plan, completados, fuera, tiempo_ms):
     print("=" * 50)
     print("  CASO GREEDY:", nombre_caso)
     print("=" * 50)
@@ -59,6 +61,7 @@ def imprimir_plan(nombre_caso, plan, completados, fuera):
                 print("    [" + materia + "] " + nombre + " - " + str(horas) + "h")
     print("\n  Completados a tiempo :", completados)
     print("  Fuera de plazo       :", fuera)
+    print("  Tiempo de ejecucion  : {:.6f} ms".format(tiempo_ms))
     print()
 
 archivos = [
@@ -69,5 +72,26 @@ archivos = [
 
 for nombre, ruta in archivos:
     temas, dias, hpd = leer_caso(ruta)
+    inicio = time.perf_counter()
     plan, comp, fuera = algoritmo_greedy(temas, dias, hpd)
-    imprimir_plan(nombre, plan, comp, fuera)
+    fin = time.perf_counter()
+    tiempo_ms = (fin - inicio) * 1000
+    imprimir_plan(nombre, plan, comp, fuera, tiempo_ms)
+
+# ──────────────────────────────────────────────
+# CASOS GRANDES (n=100 y n=1000)
+# Greedy es O(n log n) — escala perfectamente.
+# ──────────────────────────────────────────────
+
+casos_grandes = [
+    ("n=100",  "1-Datos/4-caso_100.txt"),
+    ("n=1000", "1-Datos/5-caso_1000.txt"),
+]
+
+for nombre, ruta in casos_grandes:
+    temas, dias, hpd = leer_caso(ruta)
+    inicio = time.perf_counter()
+    plan, comp, fuera = algoritmo_greedy(temas, dias, hpd)
+    fin = time.perf_counter()
+    tiempo_ms = (fin - inicio) * 1000
+    imprimir_plan(nombre, plan, comp, fuera, tiempo_ms)
