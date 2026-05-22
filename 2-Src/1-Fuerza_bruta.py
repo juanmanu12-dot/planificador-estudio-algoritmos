@@ -3,6 +3,7 @@
 # Lee los casos de prueba desde archivos .txt
 # ──────────────────────────────────────────────
 
+import time
 
 # ──────────────────────────────────────────────
 # LEER CASO DESDE ARCHIVO
@@ -69,7 +70,6 @@ def fuerza_bruta(temas, dias, horas_por_dia):
     for perm in todas:
         total_permutaciones += 1
 
-        
         horas_dia = [0] * (dias + 1)
         plan = []
         for d in range(dias + 1):
@@ -111,7 +111,7 @@ def fuerza_bruta(temas, dias, horas_por_dia):
 # IMPRIMIR RESULTADOS
 # ──────────────────────────────────────────────
 
-def imprimir_plan(nombre_caso, plan, completados, fuera, total_permutaciones):
+def imprimir_plan(nombre_caso, plan, completados, fuera, total_permutaciones, tiempo_ms):
     print("=" * 50)
     print("  CASO:", nombre_caso)
     print("=" * 50)
@@ -123,6 +123,7 @@ def imprimir_plan(nombre_caso, plan, completados, fuera, total_permutaciones):
     print("\n  Completados a tiempo :", completados)
     print("  Fuera de plazo       :", fuera)
     print("  Permutaciones        :", total_permutaciones)
+    print("  Tiempo de ejecucion  : {:.6f} ms".format(tiempo_ms))
     print()
 
 
@@ -139,10 +140,34 @@ archivos = [
 for nombre, ruta in archivos:
     print("\nEjecutando caso", nombre, "...")
     temas, dias, hpd = leer_caso(ruta)
+    inicio = time.perf_counter()
     mejor_plan, completados, fuera, total_perms = fuerza_bruta(temas, dias, hpd)
-    imprimir_plan(nombre, mejor_plan, completados, fuera, total_perms)
+    fin = time.perf_counter()
+    tiempo_ms = (fin - inicio) * 1000
+    imprimir_plan(nombre, mejor_plan, completados, fuera, total_perms, tiempo_ms)
 
+# ──────────────────────────────────────────────
+# CASOS GRANDES (n=100 y n=1000)
+# Fuerza Bruta tiene complejidad O(n!) — para n=100
+# se necesitarían evaluar 100! permutaciones, lo que
+# es computacionalmente imposible. Se registra el aviso
+# para ilustrar el crecimiento factorial.
+# ──────────────────────────────────────────────
 
+casos_grandes = [
+    ("n=100",  "1-Datos/4-caso_100.txt"),
+    ("n=1000", "1-Datos/5-caso_1000.txt"),
+]
 
-
-
+for nombre, ruta in casos_grandes:
+    temas, dias, hpd = leer_caso(ruta)
+    n = len(temas)
+    print("=" * 50)
+    print("  CASO:", nombre)
+    print("=" * 50)
+    print("\n  Fuerza Bruta es IMPRACTICABLE para n =", n)
+    print("  Permutaciones a evaluar : " + str(n) + "! (astronomico)")
+    print("  Complejidad             : O(n! * n)")
+    print("  Tiempo estimado         : miles de anos de computo")
+    print("  Resultado               : N/A")
+    print()

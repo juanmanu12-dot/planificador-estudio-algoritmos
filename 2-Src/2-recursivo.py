@@ -138,3 +138,28 @@ for nombre, ruta in archivos:
     fin = time.perf_counter()
     tiempo_ms = (fin - inicio) * 1000
     imprimir_plan(nombre, mejor_plan, completados, fuera, tiempo_ms)
+
+# ──────────────────────────────────────────────
+# CASOS GRANDES (n=100 y n=1000)
+# Recursivo tiene complejidad O(dias^n) — para n=100
+# con 15 dias disponibles seria 15^100, impracticable.
+# Se registra el aviso para el analisis de complejidad.
+# ──────────────────────────────────────────────
+
+casos_grandes = [
+    ("n=100",  "1-Datos/4-caso_100.txt"),
+    ("n=1000", "1-Datos/5-caso_1000.txt"),
+]
+
+for nombre, ruta in casos_grandes:
+    temas, dias, hpd = leer_caso(ruta)
+    n = len(temas)
+    print("=" * 50)
+    print("  CASO RECURSIVO:", nombre)
+    print("=" * 50)
+    print("\n  Recursivo es IMPRACTICABLE para n =", n)
+    print("  Nodos del arbol       : " + str(dias) + "^" + str(n) + " (astronomico)")
+    print("  Complejidad           : O(dias^n)")
+    print("  Tiempo estimado       : impracticable")
+    print("  Resultado             : N/A")
+    print()
