@@ -1,0 +1,1002 @@
+Matemáticas,Álgebra,3,4,10
+Física,Cinemática,4,5,22
+Química,Átomos,4,2,7
+Programación,Recursión,3,2,2
+Inglés,Reading,5,5,2
+Historia,Edad Media,3,1,2
+Matemáticas,Cálculo,5,4,17
+Física,Dinámica,5,2,2
+Química,Enlaces,5,1,28
+Programación,Estructuras,2,1,20
+Inglés,Writing,1,2,13
+Historia,Revolución Francesa,1,5,8
+Matemáticas,Estadística,5,5,2
+Física,Ondas,5,1,14
+Química,Reacciones,5,5,17
+Programación,Grafos,3,3,7
+Inglés,Listening,3,2,9
+Historia,Segunda Guerra,4,2,22
+Matemáticas,Matrices,3,4,11
+Física,Termodinámica,1,1,15
+Química,Orgánica,5,5,4
+Programación,Ordenamiento,1,5,7
+Inglés,Grammar,5,3,5
+Historia,Antigüedad,3,1,29
+Matemáticas,Límites,2,3,10
+Física,Óptica,2,4,27
+Química,Estequiometría,5,3,20
+Programación,Búsqueda,5,1,22
+Inglés,Vocabulary,5,3,30
+Historia,Renacimiento,1,2,9
+Matemáticas,Series,1,1,24
+Física,Electromagnetismo,5,2,9
+Química,Electroquímica,3,5,7
+Programación,POO,3,2,22
+Inglés,Speaking,3,5,16
+Historia,Colonización,3,1,3
+Matemáticas,Vectores,4,3,2
+Física,Fluidos,1,3,25
+Química,Termoquímica,2,3,6
+Programación,Bases de datos,4,5,23
+Inglés,Pronunciation,4,5,1
+Historia,Independencias,1,1,29
+Matemáticas,Geometría,2,5,2
+Física,Gravitación,3,5,18
+Química,Cinética,2,4,5
+Programación,APIs,1,3,12
+Inglés,Idioms,1,3,7
+Historia,Guerra Fría,2,1,12
+Matemáticas,Trigonometría,5,4,20
+Física,Relatividad,2,2,28
+Química,Equilibrio,2,2,29
+Programación,Complejidad,4,1,6
+Inglés,Redacción,3,4,26
+Historia,Siglo XX,2,3,6
+Matemáticas,Derivadas,1,4,28
+Física,Cuántica,1,4,8
+Química,Soluciones,2,4,12
+Programación,Patrones,3,2,8
+Inglés,Comprensión,1,2,13
+Historia,Prehistoria,3,3,28
+Matemáticas,Integrales,1,3,12
+Física,Cinemática3,5,4,22
+Química,Átomos3,5,3,1
+Programación,Recursión3,1,3,6
+Inglés,Reading3,5,3,2
+Historia,Edad Media3,1,5,14
+Matemáticas,Probabilidad,3,3,14
+Física,Dinámica3,5,5,4
+Química,Enlaces3,4,5,7
+Programación,Estructuras3,3,1,23
+Inglés,Writing3,4,1,17
+Historia,Revolución Francesa3,5,2,12
+Matemáticas,Álgebra3,4,1,22
+Física,Ondas3,3,5,11
+Química,Reacciones3,1,3,17
+Programación,Grafos3,3,4,11
+Inglés,Listening3,4,3,18
+Historia,Segunda Guerra3,2,2,14
+Matemáticas,Cálculo3,4,2,20
+Física,Termodinámica3,5,3,13
+Química,Orgánica3,5,1,10
+Programación,Ordenamiento3,3,2,14
+Inglés,Grammar3,5,5,21
+Historia,Antigüedad3,3,4,15
+Matemáticas,Estadística3,4,2,17
+Física,Óptica3,4,2,22
+Química,Estequiometría3,1,3,17
+Programación,Búsqueda3,5,3,3
+Inglés,Vocabulary3,2,3,8
+Historia,Renacimiento3,2,2,1
+Matemáticas,Matrices3,1,2,16
+Física,Electromagnetismo3,5,1,15
+Química,Electroquímica3,4,5,7
+Programación,POO3,4,4,13
+Inglés,Speaking3,2,2,21
+Historia,Colonización3,1,1,25
+Matemáticas,Límites3,4,2,6
+Física,Fluidos3,5,4,2
+Química,Termoquímica3,5,2,30
+Programación,Bases de datos3,1,4,5
+Inglés,Pronunciation3,4,5,18
+Historia,Independencias3,5,3,25
+Matemáticas,Series3,4,5,27
+Física,Gravitación3,5,4,27
+Química,Cinética3,5,4,29
+Programación,APIs3,2,4,15
+Inglés,Idioms3,3,2,27
+Historia,Guerra Fría3,3,5,16
+Matemáticas,Vectores3,2,3,15
+Física,Relatividad3,1,3,8
+Química,Equilibrio3,3,3,11
+Programación,Complejidad3,5,1,5
+Inglés,Redacción3,2,2,13
+Historia,Siglo XX3,2,2,3
+Matemáticas,Geometría3,4,4,11
+Física,Cuántica3,5,4,14
+Química,Soluciones3,1,2,27
+Programación,Patrones3,4,4,29
+Inglés,Comprensión3,5,1,28
+Historia,Prehistoria3,5,4,16
+Matemáticas,Trigonometría3,1,3,10
+Física,Cinemática4,4,4,18
+Química,Átomos4,5,5,29
+Programación,Recursión4,2,4,8
+Inglés,Reading4,3,4,16
+Historia,Edad Media4,1,4,11
+Matemáticas,Derivadas3,4,2,27
+Física,Dinámica4,4,2,20
+Química,Enlaces4,5,1,30
+Programación,Estructuras4,4,5,19
+Inglés,Writing4,1,1,21
+Historia,Revolución Francesa4,4,2,28
+Matemáticas,Integrales3,4,2,2
+Física,Ondas4,3,4,11
+Química,Reacciones4,2,4,11
+Programación,Grafos4,3,4,9
+Inglés,Listening4,4,3,27
+Historia,Segunda Guerra4,1,4,1
+Matemáticas,Probabilidad3,5,1,12
+Física,Termodinámica4,2,1,25
+Química,Orgánica4,1,1,8
+Programación,Ordenamiento4,2,1,20
+Inglés,Grammar4,2,2,5
+Historia,Antigüedad4,4,1,19
+Matemáticas,Álgebra4,2,4,23
+Física,Óptica4,3,3,6
+Química,Estequiometría4,5,5,24
+Programación,Búsqueda4,1,2,10
+Inglés,Vocabulary4,1,5,1
+Historia,Renacimiento4,3,5,22
+Matemáticas,Cálculo4,4,4,23
+Física,Electromagnetismo4,2,1,19
+Química,Electroquímica4,2,1,23
+Programación,POO4,3,5,26
+Inglés,Speaking4,1,5,26
+Historia,Colonización4,1,3,18
+Matemáticas,Estadística4,4,3,3
+Física,Fluidos4,5,3,1
+Química,Termoquímica4,4,4,4
+Programación,Bases de datos4,4,3,21
+Inglés,Pronunciation4,4,2,14
+Historia,Independencias4,2,5,21
+Matemáticas,Matrices4,3,5,26
+Física,Gravitación4,5,4,15
+Química,Cinética4,4,5,9
+Programación,APIs4,3,2,27
+Inglés,Idioms4,1,3,29
+Historia,Guerra Fría4,4,2,25
+Matemáticas,Límites4,4,5,20
+Física,Relatividad4,4,3,1
+Química,Equilibrio4,4,3,6
+Programación,Complejidad4,4,2,12
+Inglés,Redacción4,3,3,9
+Historia,Siglo XX4,5,3,18
+Matemáticas,Series4,1,5,7
+Física,Cuántica4,1,2,24
+Química,Soluciones4,4,4,18
+Programación,Patrones4,2,4,21
+Inglés,Comprensión4,4,4,26
+Historia,Prehistoria4,1,1,10
+Matemáticas,Vectores4,2,4,23
+Física,Cinemática5,2,3,22
+Química,Átomos5,5,3,16
+Programación,Recursión5,5,5,12
+Inglés,Reading5,4,5,11
+Historia,Edad Media5,3,4,9
+Matemáticas,Geometría4,3,3,8
+Física,Dinámica5,1,2,11
+Química,Enlaces5,1,5,25
+Programación,Estructuras5,2,2,7
+Inglés,Writing5,4,3,24
+Historia,Revolución Francesa5,5,5,20
+Matemáticas,Trigonometría4,3,1,27
+Física,Ondas5,2,3,8
+Química,Reacciones5,3,2,10
+Programación,Grafos5,1,5,5
+Inglés,Listening5,3,1,2
+Historia,Segunda Guerra5,5,3,23
+Matemáticas,Derivadas4,2,4,4
+Física,Termodinámica5,1,5,10
+Química,Orgánica5,4,4,15
+Programación,Ordenamiento5,3,2,2
+Inglés,Grammar5,3,4,4
+Historia,Antigüedad5,1,4,16
+Matemáticas,Integrales4,1,5,21
+Física,Óptica5,1,2,5
+Química,Estequiometría5,5,3,3
+Programación,Búsqueda5,2,1,18
+Inglés,Vocabulary5,4,5,20
+Historia,Renacimiento5,5,2,25
+Matemáticas,Probabilidad4,5,4,15
+Física,Electromagnetismo5,4,3,28
+Química,Electroquímica5,5,4,10
+Programación,POO5,5,5,2
+Inglés,Speaking5,5,1,25
+Historia,Colonización5,2,2,9
+Matemáticas,Álgebra5,1,2,8
+Física,Fluidos5,2,5,3
+Química,Termoquímica5,2,1,14
+Programación,Bases de datos5,4,5,16
+Inglés,Pronunciation5,3,1,8
+Historia,Independencias5,3,3,23
+Matemáticas,Cálculo5,4,1,22
+Física,Gravitación5,2,3,26
+Química,Cinética5,5,2,14
+Programación,APIs5,1,5,8
+Inglés,Idioms5,2,3,27
+Historia,Guerra Fría5,2,1,2
+Matemáticas,Estadística5,2,3,20
+Física,Relatividad5,5,3,15
+Química,Equilibrio5,1,4,23
+Programación,Complejidad5,3,4,9
+Inglés,Redacción5,5,5,16
+Historia,Siglo XX5,4,1,20
+Matemáticas,Matrices5,1,4,24
+Física,Cuántica5,3,5,9
+Química,Soluciones5,1,1,8
+Programación,Patrones5,5,5,1
+Inglés,Comprensión5,3,5,2
+Historia,Prehistoria5,2,4,17
+Matemáticas,Límites5,4,3,6
+Física,Cinemática6,5,4,21
+Química,Átomos6,4,1,16
+Programación,Recursión6,3,4,11
+Inglés,Reading6,3,1,28
+Historia,Edad Media6,2,3,14
+Matemáticas,Series5,4,3,22
+Física,Dinámica6,4,5,2
+Química,Enlaces6,4,1,11
+Programación,Estructuras6,3,3,4
+Inglés,Writing6,4,5,27
+Historia,Revolución Francesa6,1,5,15
+Matemáticas,Vectores5,4,1,7
+Física,Ondas6,5,3,20
+Química,Reacciones6,4,4,25
+Programación,Grafos6,1,2,9
+Inglés,Listening6,5,2,30
+Historia,Segunda Guerra6,3,4,29
+Matemáticas,Geometría5,4,1,1
+Física,Termodinámica6,5,2,23
+Química,Orgánica6,2,3,18
+Programación,Ordenamiento6,1,5,14
+Inglés,Grammar6,1,2,27
+Historia,Antigüedad6,1,4,4
+Matemáticas,Trigonometría5,2,4,30
+Física,Óptica6,3,5,23
+Química,Estequiometría6,3,4,27
+Programación,Búsqueda6,4,4,8
+Inglés,Vocabulary6,4,5,5
+Historia,Renacimiento6,4,2,30
+Matemáticas,Derivadas5,5,5,24
+Física,Electromagnetismo6,2,1,9
+Química,Electroquímica6,4,3,30
+Programación,POO6,5,3,27
+Inglés,Speaking6,1,3,24
+Historia,Colonización6,3,5,19
+Matemáticas,Integrales5,4,2,15
+Física,Fluidos6,5,4,12
+Química,Termoquímica6,3,5,25
+Programación,Bases de datos6,5,4,15
+Inglés,Pronunciation6,3,2,23
+Historia,Independencias6,2,5,13
+Matemáticas,Probabilidad5,2,4,2
+Física,Gravitación6,3,4,23
+Química,Cinética6,4,4,22
+Programación,APIs6,2,4,2
+Inglés,Idioms6,2,5,19
+Historia,Guerra Fría6,3,1,28
+Matemáticas,Álgebra6,4,1,17
+Física,Relatividad6,4,1,24
+Química,Equilibrio6,2,4,28
+Programación,Complejidad6,2,1,16
+Inglés,Redacción6,3,3,20
+Historia,Siglo XX6,4,1,28
+Matemáticas,Cálculo6,3,5,13
+Física,Cuántica6,3,4,28
+Química,Soluciones6,5,1,20
+Programación,Patrones6,1,2,21
+Inglés,Comprensión6,3,2,24
+Historia,Prehistoria6,1,4,4
+Matemáticas,Estadística6,1,4,6
+Física,Cinemática7,3,1,2
+Química,Átomos7,3,1,10
+Programación,Recursión7,3,3,14
+Inglés,Reading7,2,2,17
+Historia,Edad Media7,4,5,22
+Matemáticas,Matrices6,2,2,6
+Física,Dinámica7,1,5,28
+Química,Enlaces7,4,5,22
+Programación,Estructuras7,2,4,30
+Inglés,Writing7,5,2,8
+Historia,Revolución Francesa7,4,3,15
+Matemáticas,Límites6,3,1,29
+Física,Ondas7,4,3,22
+Química,Reacciones7,5,2,3
+Programación,Grafos7,4,3,19
+Inglés,Listening7,3,4,23
+Historia,Segunda Guerra7,3,4,28
+Matemáticas,Series6,3,2,13
+Física,Termodinámica7,4,1,8
+Química,Orgánica7,4,5,12
+Programación,Ordenamiento7,5,3,23
+Inglés,Grammar7,3,1,27
+Historia,Antigüedad7,4,3,1
+Matemáticas,Vectores6,5,1,30
+Física,Óptica7,5,4,27
+Química,Estequiometría7,3,2,20
+Programación,Búsqueda7,3,2,21
+Inglés,Vocabulary7,2,5,9
+Historia,Renacimiento7,2,1,29
+Matemáticas,Geometría6,1,3,26
+Física,Electromagnetismo7,4,1,19
+Química,Electroquímica7,3,2,3
+Programación,POO7,3,3,24
+Inglés,Speaking7,4,2,7
+Historia,Colonización7,2,5,29
+Matemáticas,Trigonometría6,3,5,17
+Física,Fluidos7,3,2,9
+Química,Termoquímica7,4,3,24
+Programación,Bases de datos7,3,1,15
+Inglés,Pronunciation7,1,2,25
+Historia,Independencias7,2,4,28
+Matemáticas,Derivadas6,5,3,3
+Física,Gravitación7,4,1,9
+Química,Cinética7,5,1,15
+Programación,APIs7,3,3,19
+Inglés,Idioms7,4,3,4
+Historia,Guerra Fría7,2,4,1
+Matemáticas,Integrales6,5,5,11
+Física,Relatividad7,5,2,21
+Química,Equilibrio7,1,4,30
+Programación,Complejidad7,3,4,4
+Inglés,Redacción7,2,1,2
+Historia,Siglo XX7,3,4,4
+Matemáticas,Probabilidad6,1,2,29
+Física,Cuántica7,5,2,13
+Química,Soluciones7,4,3,22
+Programación,Patrones7,5,4,19
+Inglés,Comprensión7,2,4,21
+Historia,Prehistoria7,1,4,20
+Matemáticas,Álgebra7,4,3,2
+Física,Cinemática8,3,2,15
+Química,Átomos8,4,2,28
+Programación,Recursión8,3,1,22
+Inglés,Reading8,3,5,29
+Historia,Edad Media8,3,1,13
+Matemáticas,Cálculo7,3,2,4
+Física,Dinámica8,4,1,22
+Química,Enlaces8,2,5,1
+Programación,Estructuras8,1,3,8
+Inglés,Writing8,2,5,7
+Historia,Revolución Francesa8,1,5,7
+Matemáticas,Estadística7,5,2,27
+Física,Ondas8,2,3,25
+Química,Reacciones8,2,5,1
+Programación,Grafos8,3,2,5
+Inglés,Listening8,5,3,26
+Historia,Segunda Guerra8,2,1,22
+Matemáticas,Matrices7,1,2,1
+Física,Termodinámica8,3,2,19
+Química,Orgánica8,3,1,6
+Programación,Ordenamiento8,3,1,5
+Inglés,Grammar8,4,5,4
+Historia,Antigüedad8,1,4,15
+Matemáticas,Límites7,3,5,19
+Física,Óptica8,1,4,17
+Química,Estequiometría8,2,5,2
+Programación,Búsqueda8,5,3,15
+Inglés,Vocabulary8,1,1,16
+Historia,Renacimiento8,4,4,22
+Matemáticas,Series7,1,4,23
+Física,Electromagnetismo8,4,1,29
+Química,Electroquímica8,1,3,20
+Programación,POO8,2,1,5
+Inglés,Speaking8,3,5,21
+Historia,Colonización8,5,5,23
+Matemáticas,Vectores7,3,4,20
+Física,Fluidos8,5,3,15
+Química,Termoquímica8,5,5,14
+Programación,Bases de datos8,1,1,28
+Inglés,Pronunciation8,5,2,14
+Historia,Independencias8,4,2,14
+Matemáticas,Geometría7,3,4,13
+Física,Gravitación8,4,1,11
+Química,Cinética8,4,3,22
+Programación,APIs8,3,3,5
+Inglés,Idioms8,4,1,3
+Historia,Guerra Fría8,1,1,14
+Matemáticas,Trigonometría7,1,3,26
+Física,Relatividad8,2,5,2
+Química,Equilibrio8,5,5,18
+Programación,Complejidad8,3,1,14
+Inglés,Redacción8,3,4,28
+Historia,Siglo XX8,1,3,20
+Matemáticas,Derivadas7,3,3,4
+Física,Cuántica8,5,5,7
+Química,Soluciones8,2,4,8
+Programación,Patrones8,1,3,28
+Inglés,Comprensión8,5,3,4
+Historia,Prehistoria8,3,5,8
+Matemáticas,Integrales7,4,5,25
+Física,Cinemática9,5,5,22
+Química,Átomos9,5,1,20
+Programación,Recursión9,3,1,6
+Inglés,Reading9,3,3,30
+Historia,Edad Media9,3,3,1
+Matemáticas,Probabilidad7,2,2,19
+Física,Dinámica9,4,1,5
+Química,Enlaces9,1,1,24
+Programación,Estructuras9,5,2,13
+Inglés,Writing9,4,4,11
+Historia,Revolución Francesa9,2,3,10
+Matemáticas,Álgebra8,3,5,20
+Física,Ondas9,1,1,5
+Química,Reacciones9,2,5,2
+Programación,Grafos9,1,3,15
+Inglés,Listening9,4,4,20
+Historia,Segunda Guerra9,4,4,9
+Matemáticas,Cálculo8,2,5,4
+Física,Termodinámica9,3,4,4
+Química,Orgánica9,3,5,16
+Programación,Ordenamiento9,5,3,2
+Inglés,Grammar9,2,4,20
+Historia,Antigüedad9,1,1,7
+Matemáticas,Estadística8,3,2,25
+Física,Óptica9,2,3,10
+Química,Estequiometría9,3,1,1
+Programación,Búsqueda9,4,4,6
+Inglés,Vocabulary9,2,4,18
+Historia,Renacimiento9,2,5,18
+Matemáticas,Matrices8,3,1,13
+Física,Electromagnetismo9,1,4,1
+Química,Electroquímica9,4,1,28
+Programación,POO9,3,5,14
+Inglés,Speaking9,5,4,23
+Historia,Colonización9,4,3,4
+Matemáticas,Límites8,4,1,11
+Física,Fluidos9,2,5,15
+Química,Termoquímica9,3,1,14
+Programación,Bases de datos9,1,2,14
+Inglés,Pronunciation9,5,4,17
+Historia,Independencias9,1,4,28
+Matemáticas,Series8,3,3,8
+Física,Gravitación9,3,2,3
+Química,Cinética9,5,1,17
+Programación,APIs9,5,2,29
+Inglés,Idioms9,3,3,24
+Historia,Guerra Fría9,2,2,4
+Matemáticas,Vectores8,2,3,7
+Física,Relatividad9,2,5,5
+Química,Equilibrio9,1,2,25
+Programación,Complejidad9,4,4,25
+Inglés,Redacción9,5,5,15
+Historia,Siglo XX9,5,5,11
+Matemáticas,Geometría8,3,2,15
+Física,Cuántica9,1,4,15
+Química,Soluciones9,3,3,19
+Programación,Patrones9,1,3,17
+Inglés,Comprensión9,1,3,15
+Historia,Prehistoria9,4,1,2
+Matemáticas,Trigonometría8,3,3,3
+Física,Cinemática10,1,5,20
+Química,Átomos10,5,4,15
+Programación,Recursión10,5,5,26
+Inglés,Reading10,1,4,30
+Historia,Edad Media10,5,2,11
+Matemáticas,Derivadas8,5,4,17
+Física,Dinámica10,2,1,15
+Química,Enlaces10,1,3,23
+Programación,Estructuras10,1,5,21
+Inglés,Writing10,2,1,8
+Historia,Revolución Francesa10,4,4,17
+Matemáticas,Integrales8,5,5,6
+Física,Ondas10,3,3,30
+Química,Reacciones10,3,4,14
+Programación,Grafos10,3,5,2
+Inglés,Listening10,3,1,11
+Historia,Segunda Guerra10,1,5,22
+Matemáticas,Probabilidad8,4,3,9
+Física,Termodinámica10,5,2,11
+Química,Orgánica10,1,5,22
+Programación,Ordenamiento10,2,3,10
+Inglés,Grammar10,4,2,20
+Historia,Antigüedad10,1,3,18
+Matemáticas,Álgebra9,4,3,27
+Física,Óptica10,2,5,3
+Química,Estequiometría10,4,5,12
+Programación,Búsqueda10,1,3,10
+Inglés,Vocabulary10,2,2,11
+Historia,Renacimiento10,4,2,8
+Matemáticas,Cálculo9,2,2,3
+Física,Electromagnetismo10,3,1,17
+Química,Electroquímica10,5,5,2
+Programación,POO10,3,5,5
+Inglés,Speaking10,5,4,5
+Historia,Colonización10,2,2,27
+Matemáticas,Estadística9,5,2,24
+Física,Fluidos10,4,1,14
+Química,Termoquímica10,3,2,15
+Programación,Bases de datos10,5,3,25
+Inglés,Pronunciation10,4,2,18
+Historia,Independencias10,2,3,26
+Matemáticas,Matrices9,4,2,12
+Física,Gravitación10,5,4,15
+Química,Cinética10,3,4,17
+Programación,APIs10,5,4,6
+Inglés,Idioms10,2,5,5
+Historia,Guerra Fría10,3,1,21
+Matemáticas,Límites9,4,3,18
+Física,Relatividad10,1,5,28
+Química,Equilibrio10,1,3,3
+Programación,Complejidad10,2,3,15
+Inglés,Redacción10,5,2,27
+Historia,Siglo XX10,4,1,30
+Matemáticas,Series9,2,4,29
+Física,Cuántica10,3,1,14
+Química,Soluciones10,1,4,17
+Programación,Patrones10,3,2,13
+Inglés,Comprensión10,1,3,8
+Historia,Prehistoria10,1,3,30
+Matemáticas,Vectores9,1,3,26
+Física,Cinemática11,2,2,2
+Química,Átomos11,3,4,23
+Programación,Recursión11,2,4,15
+Inglés,Reading11,5,1,29
+Historia,Edad Media11,1,1,9
+Matemáticas,Geometría9,2,2,18
+Física,Dinámica11,5,5,14
+Química,Enlaces11,1,3,8
+Programación,Estructuras11,3,1,2
+Inglés,Writing11,2,4,21
+Historia,Revolución Francesa11,5,4,3
+Matemáticas,Trigonometría9,1,4,20
+Física,Ondas11,5,1,21
+Química,Reacciones11,5,5,8
+Programación,Grafos11,2,3,14
+Inglés,Listening11,1,5,12
+Historia,Segunda Guerra11,2,5,14
+Matemáticas,Derivadas9,2,1,17
+Física,Termodinámica11,3,1,17
+Química,Orgánica11,5,5,26
+Programación,Ordenamiento11,5,5,1
+Inglés,Grammar11,4,4,2
+Historia,Antigüedad11,4,3,9
+Matemáticas,Integrales9,1,3,26
+Física,Óptica11,1,3,8
+Química,Estequiometría11,1,5,24
+Programación,Búsqueda11,3,2,2
+Inglés,Vocabulary11,3,5,11
+Historia,Renacimiento11,2,4,23
+Matemáticas,Probabilidad9,4,2,26
+Física,Electromagnetismo11,2,1,23
+Química,Electroquímica11,4,1,10
+Programación,POO11,2,1,26
+Inglés,Speaking11,2,1,11
+Historia,Colonización11,3,5,13
+Matemáticas,Álgebra10,5,4,9
+Física,Fluidos11,1,2,10
+Química,Termoquímica11,3,1,28
+Programación,Bases de datos11,3,3,4
+Inglés,Pronunciation11,3,4,29
+Historia,Independencias11,4,4,29
+Matemáticas,Cálculo10,4,3,6
+Física,Gravitación11,4,4,12
+Química,Cinética11,5,3,26
+Programación,APIs11,1,4,3
+Inglés,Idioms11,4,5,27
+Historia,Guerra Fría11,2,5,10
+Matemáticas,Estadística10,3,1,3
+Física,Relatividad11,3,3,10
+Química,Equilibrio11,4,5,23
+Programación,Complejidad11,4,2,23
+Inglés,Redacción11,4,3,15
+Historia,Siglo XX11,1,3,20
+Matemáticas,Matrices10,4,3,21
+Física,Cuántica11,1,1,22
+Química,Soluciones11,4,3,17
+Programación,Patrones11,2,1,5
+Inglés,Comprensión11,5,4,2
+Historia,Prehistoria11,2,1,8
+Matemáticas,Límites10,3,3,13
+Física,Cinemática12,5,1,20
+Química,Átomos12,2,4,12
+Programación,Recursión12,3,4,25
+Inglés,Reading12,1,5,5
+Historia,Edad Media12,5,3,13
+Matemáticas,Series10,3,3,8
+Física,Dinámica12,1,1,24
+Química,Enlaces12,2,4,17
+Programación,Estructuras12,4,5,4
+Inglés,Writing12,3,3,23
+Historia,Revolución Francesa12,4,2,20
+Matemáticas,Vectores10,3,4,7
+Física,Ondas12,1,2,28
+Química,Reacciones12,1,4,6
+Programación,Grafos12,4,1,26
+Inglés,Listening12,3,3,23
+Historia,Segunda Guerra12,1,5,18
+Matemáticas,Geometría10,3,3,28
+Física,Termodinámica12,2,2,26
+Química,Orgánica12,3,5,8
+Programación,Ordenamiento12,1,2,26
+Inglés,Grammar12,2,2,26
+Historia,Antigüedad12,4,1,12
+Matemáticas,Trigonometría10,5,5,12
+Física,Óptica12,4,5,5
+Química,Estequiometría12,5,1,3
+Programación,Búsqueda12,3,4,23
+Inglés,Vocabulary12,4,5,14
+Historia,Renacimiento12,4,5,3
+Matemáticas,Derivadas10,2,3,21
+Física,Electromagnetismo12,1,4,15
+Química,Electroquímica12,5,3,5
+Programación,POO12,5,5,6
+Inglés,Speaking12,2,4,17
+Historia,Colonización12,1,1,17
+Matemáticas,Integrales10,2,3,6
+Física,Fluidos12,2,3,30
+Química,Termoquímica12,2,3,17
+Programación,Bases de datos12,3,1,9
+Inglés,Pronunciation12,2,5,9
+Historia,Independencias12,2,3,20
+Matemáticas,Probabilidad10,5,1,17
+Física,Gravitación12,2,5,19
+Química,Cinética12,2,2,22
+Programación,APIs12,5,5,11
+Inglés,Idioms12,5,1,27
+Historia,Guerra Fría12,1,1,2
+Matemáticas,Álgebra11,5,3,21
+Física,Relatividad12,2,5,14
+Química,Equilibrio12,5,1,16
+Programación,Complejidad12,5,3,21
+Inglés,Redacción12,3,4,8
+Historia,Siglo XX12,4,3,15
+Matemáticas,Cálculo11,1,1,6
+Física,Cuántica12,4,4,16
+Química,Soluciones12,4,2,11
+Programación,Patrones12,5,2,11
+Inglés,Comprensión12,3,3,13
+Historia,Prehistoria12,2,3,17
+Matemáticas,Estadística11,5,1,11
+Física,Cinemática13,2,4,4
+Química,Átomos13,3,4,8
+Programación,Recursión13,2,1,2
+Inglés,Reading13,3,4,28
+Historia,Edad Media13,5,4,8
+Matemáticas,Matrices11,2,3,30
+Física,Dinámica13,5,3,7
+Química,Enlaces13,2,4,17
+Programación,Estructuras13,4,4,29
+Inglés,Writing13,3,4,1
+Historia,Revolución Francesa13,1,4,17
+Matemáticas,Límites11,4,2,7
+Física,Ondas13,5,3,2
+Química,Reacciones13,1,3,16
+Programación,Grafos13,5,4,10
+Inglés,Listening13,5,1,28
+Historia,Segunda Guerra13,1,4,5
+Matemáticas,Series11,3,3,25
+Física,Termodinámica13,4,3,2
+Química,Orgánica13,4,1,19
+Programación,Ordenamiento13,5,2,12
+Inglés,Grammar13,5,3,3
+Historia,Antigüedad13,4,5,15
+Matemáticas,Vectores11,5,3,27
+Física,Óptica13,5,5,4
+Química,Estequiometría13,2,1,13
+Programación,Búsqueda13,3,3,18
+Inglés,Vocabulary13,3,2,7
+Historia,Renacimiento13,5,5,13
+Matemáticas,Geometría11,5,1,2
+Física,Electromagnetismo13,1,2,23
+Química,Electroquímica13,3,4,17
+Programación,POO13,4,2,20
+Inglés,Speaking13,5,2,11
+Historia,Colonización13,5,3,6
+Matemáticas,Trigonometría11,4,5,24
+Física,Fluidos13,3,5,11
+Química,Termoquímica13,5,5,18
+Programación,Bases de datos13,4,5,10
+Inglés,Pronunciation13,4,1,12
+Historia,Independencias13,3,1,14
+Matemáticas,Derivadas11,5,3,26
+Física,Gravitación13,1,5,16
+Química,Cinética13,3,5,19
+Programación,APIs13,2,1,19
+Inglés,Idioms13,4,2,17
+Historia,Guerra Fría13,5,4,5
+Matemáticas,Integrales11,2,1,19
+Física,Relatividad13,1,2,1
+Química,Equilibrio13,4,3,14
+Programación,Complejidad13,2,4,23
+Inglés,Redacción13,2,4,17
+Historia,Siglo XX13,5,4,28
+Matemáticas,Probabilidad11,1,2,17
+Física,Cuántica13,2,5,11
+Química,Soluciones13,4,5,13
+Programación,Patrones13,3,2,15
+Inglés,Comprensión13,5,3,18
+Historia,Prehistoria13,3,3,20
+Matemáticas,Álgebra12,4,2,8
+Física,Cinemática14,3,5,10
+Química,Átomos14,2,3,25
+Programación,Recursión14,3,2,23
+Inglés,Reading14,4,3,16
+Historia,Edad Media14,3,5,30
+Matemáticas,Cálculo12,3,3,4
+Física,Dinámica14,5,5,13
+Química,Enlaces14,4,3,25
+Programación,Estructuras14,2,3,2
+Inglés,Writing14,3,1,12
+Historia,Revolución Francesa14,4,3,24
+Matemáticas,Estadística12,4,2,7
+Física,Ondas14,5,3,30
+Química,Reacciones14,5,3,5
+Programación,Grafos14,1,5,24
+Inglés,Listening14,5,2,8
+Historia,Segunda Guerra14,1,5,8
+Matemáticas,Matrices12,2,1,4
+Física,Termodinámica14,4,3,23
+Química,Orgánica14,4,1,22
+Programación,Ordenamiento14,2,1,18
+Inglés,Grammar14,2,4,21
+Historia,Antigüedad14,4,4,21
+Matemáticas,Límites12,2,3,11
+Física,Óptica14,3,1,30
+Química,Estequiometría14,1,5,8
+Programación,Búsqueda14,5,1,30
+Inglés,Vocabulary14,2,4,29
+Historia,Renacimiento14,2,1,27
+Matemáticas,Series12,4,4,6
+Física,Electromagnetismo14,3,1,1
+Química,Electroquímica14,3,5,20
+Programación,POO14,1,3,10
+Inglés,Speaking14,4,5,17
+Historia,Colonización14,4,2,28
+Matemáticas,Vectores12,5,4,9
+Física,Fluidos14,2,1,11
+Química,Termoquímica14,2,4,21
+Programación,Bases de datos14,3,2,1
+Inglés,Pronunciation14,3,3,19
+Historia,Independencias14,2,2,20
+Matemáticas,Geometría12,4,4,17
+Física,Gravitación14,3,1,13
+Química,Cinética14,1,2,5
+Programación,APIs14,4,3,30
+Inglés,Idioms14,2,1,9
+Historia,Guerra Fría14,4,2,15
+Matemáticas,Trigonometría12,3,3,10
+Física,Relatividad14,5,5,1
+Química,Equilibrio14,3,3,23
+Programación,Complejidad14,2,1,22
+Inglés,Redacción14,1,4,10
+Historia,Siglo XX14,2,4,22
+Matemáticas,Derivadas12,5,3,23
+Física,Cuántica14,1,3,12
+Química,Soluciones14,5,2,8
+Programación,Patrones14,2,4,5
+Inglés,Comprensión14,4,5,12
+Historia,Prehistoria14,4,5,30
+Matemáticas,Integrales12,4,5,26
+Física,Cinemática15,2,2,22
+Química,Átomos15,5,1,17
+Programación,Recursión15,4,5,23
+Inglés,Reading15,3,1,30
+Historia,Edad Media15,5,1,2
+Matemáticas,Probabilidad12,5,5,7
+Física,Dinámica15,5,5,5
+Química,Enlaces15,2,3,28
+Programación,Estructuras15,5,4,4
+Inglés,Writing15,2,5,16
+Historia,Revolución Francesa15,1,5,15
+Matemáticas,Álgebra13,1,4,5
+Física,Ondas15,5,4,15
+Química,Reacciones15,5,1,18
+Programación,Grafos15,4,3,24
+Inglés,Listening15,1,4,9
+Historia,Segunda Guerra15,1,2,19
+Matemáticas,Cálculo13,1,1,14
+Física,Termodinámica15,3,1,18
+Química,Orgánica15,1,1,30
+Programación,Ordenamiento15,4,1,10
+Inglés,Grammar15,4,2,25
+Historia,Antigüedad15,2,4,12
+Matemáticas,Estadística13,4,4,28
+Física,Óptica15,4,4,3
+Química,Estequiometría15,5,2,21
+Programación,Búsqueda15,3,1,6
+Inglés,Vocabulary15,5,4,17
+Historia,Renacimiento15,2,2,27
+Matemáticas,Matrices13,1,1,10
+Física,Electromagnetismo15,4,5,14
+Química,Electroquímica15,5,4,27
+Programación,POO15,2,2,15
+Inglés,Speaking15,3,2,9
+Historia,Colonización15,2,1,2
+Matemáticas,Límites13,4,5,25
+Física,Fluidos15,1,2,7
+Química,Termoquímica15,1,1,20
+Programación,Bases de datos15,1,4,20
+Inglés,Pronunciation15,1,2,24
+Historia,Independencias15,1,4,15
+Matemáticas,Series13,2,5,7
+Física,Gravitación15,1,2,17
+Química,Cinética15,3,2,27
+Programación,APIs15,5,3,19
+Inglés,Idioms15,5,3,8
+Historia,Guerra Fría15,3,2,22
+Matemáticas,Vectores13,5,2,14
+Física,Relatividad15,3,3,2
+Química,Equilibrio15,5,5,29
+Programación,Complejidad15,2,4,18
+Inglés,Redacción15,4,1,12
+Historia,Siglo XX15,4,5,11
+Matemáticas,Geometría13,4,4,5
+Física,Cuántica15,3,4,6
+Química,Soluciones15,5,4,8
+Programación,Patrones15,2,3,28
+Inglés,Comprensión15,2,4,30
+Historia,Prehistoria15,1,5,14
+Matemáticas,Trigonometría13,4,5,17
+Física,Cinemática16,2,4,8
+Química,Átomos16,3,2,11
+Programación,Recursión16,1,4,28
+Inglés,Reading16,3,1,18
+Historia,Edad Media16,2,1,9
+Matemáticas,Derivadas13,4,5,20
+Física,Dinámica16,1,1,7
+Química,Enlaces16,5,5,7
+Programación,Estructuras16,4,2,28
+Inglés,Writing16,3,3,30
+Historia,Revolución Francesa16,1,2,30
+Matemáticas,Integrales13,2,1,24
+Física,Ondas16,4,2,23
+Química,Reacciones16,5,2,13
+Programación,Grafos16,2,5,11
+Inglés,Listening16,3,4,15
+Historia,Segunda Guerra16,5,3,10
+Matemáticas,Probabilidad13,3,3,17
+Física,Termodinámica16,4,4,4
+Química,Orgánica16,4,3,30
+Programación,Ordenamiento16,2,3,11
+Inglés,Grammar16,4,1,19
+Historia,Antigüedad16,2,2,1
+Matemáticas,Álgebra14,3,5,30
+Física,Óptica16,5,5,24
+Química,Estequiometría16,4,3,5
+Programación,Búsqueda16,2,3,8
+Inglés,Vocabulary16,4,5,27
+Historia,Renacimiento16,2,4,18
+Matemáticas,Cálculo14,3,3,25
+Física,Electromagnetismo16,4,4,15
+Química,Electroquímica16,2,3,6
+Programación,POO16,2,5,16
+Inglés,Speaking16,2,5,21
+Historia,Colonización16,1,5,2
+Matemáticas,Estadística14,1,1,25
+Física,Fluidos16,1,4,5
+Química,Termoquímica16,2,1,23
+Programación,Bases de datos16,2,1,7
+Inglés,Pronunciation16,5,4,12
+Historia,Independencias16,1,5,21
+Matemáticas,Matrices14,5,4,22
+Física,Gravitación16,4,1,1
+Química,Cinética16,5,5,14
+Programación,APIs16,1,1,17
+Inglés,Idioms16,3,5,10
+Historia,Guerra Fría16,1,5,27
+Matemáticas,Límites14,4,2,4
+Física,Relatividad16,1,5,5
+Química,Equilibrio16,2,2,20
+Programación,Complejidad16,5,3,27
+Inglés,Redacción16,3,3,26
+Historia,Siglo XX16,4,1,12
+Matemáticas,Series14,4,4,19
+Física,Cuántica16,2,2,10
+Química,Soluciones16,1,1,3
+Programación,Patrones16,4,4,13
+Inglés,Comprensión16,5,4,2
+Historia,Prehistoria16,1,2,3
+Matemáticas,Vectores14,4,4,21
+Física,Cinemática17,3,5,28
+Química,Átomos17,1,5,30
+Programación,Recursión17,1,2,7
+Inglés,Reading17,5,4,9
+Historia,Edad Media17,1,1,22
+Matemáticas,Geometría14,3,5,19
+Física,Dinámica17,1,2,30
+Química,Enlaces17,3,1,7
+Programación,Estructuras17,5,2,25
+Inglés,Writing17,4,1,10
+Historia,Revolución Francesa17,2,5,8
+Matemáticas,Trigonometría14,5,4,22
+Física,Ondas17,5,3,13
+Química,Reacciones17,2,1,17
+Programación,Grafos17,3,1,4
+Inglés,Listening17,4,2,27
+Historia,Segunda Guerra17,1,3,20
+Matemáticas,Derivadas14,5,5,13
+Física,Termodinámica17,3,1,21
+Química,Orgánica17,3,4,16
+Programación,Ordenamiento17,2,3,18
+Inglés,Grammar17,4,4,6
+Historia,Antigüedad17,5,4,3
+Matemáticas,Integrales14,5,3,26
+Física,Óptica17,2,1,3
+Química,Estequiometría17,3,2,13
+Programación,Búsqueda17,2,4,11
+Inglés,Vocabulary17,3,1,3
+Historia,Renacimiento17,1,3,15
+Matemáticas,Probabilidad14,3,3,4
+Física,Electromagnetismo17,2,1,6
+Química,Electroquímica17,4,4,18
+Programación,POO17,5,5,14
+Inglés,Speaking17,1,1,3
+Historia,Colonización17,3,5,3
+Matemáticas,Álgebra15,5,5,26
+Física,Fluidos17,3,4,1
+Química,Termoquímica17,3,4,13
+Programación,Bases de datos17,1,5,29
+Inglés,Pronunciation17,2,5,17
+Historia,Independencias17,2,4,6
+Matemáticas,Cálculo15,2,3,10
+Física,Gravitación17,3,4,5
+Química,Cinética17,1,2,14
+Programación,APIs17,3,4,10
+Inglés,Idioms17,4,1,12
+Historia,Guerra Fría17,3,2,24
+Matemáticas,Estadística15,4,5,20
+Física,Relatividad17,2,4,4
+Química,Equilibrio17,2,3,1
+Programación,Complejidad17,4,3,27
+Inglés,Redacción17,5,4,26
+Historia,Siglo XX17,3,4,11
+Matemáticas,Matrices15,4,5,5
+Física,Cuántica17,3,3,20
+Química,Soluciones17,2,4,11
+Programación,Patrones17,2,4,11
+Inglés,Comprensión17,3,4,19
+Historia,Prehistoria17,2,3,13
+Matemáticas,Límites15,3,4,12
+Física,Cinemática18,1,5,7
+Química,Átomos18,5,5,6
+Programación,Recursión18,5,1,24
+Inglés,Reading18,4,2,15
+Historia,Edad Media18,3,1,27
+Matemáticas,Series15,4,4,5
+Física,Dinámica18,3,2,9
+Química,Enlaces18,2,4,26
+Programación,Estructuras18,4,1,15
+Inglés,Writing18,5,4,19
+Historia,Revolución Francesa18,4,5,17
+Matemáticas,Vectores15,4,5,2
+Física,Ondas18,3,5,20
+Química,Reacciones18,1,1,25
+Programación,Grafos18,2,3,6
+Inglés,Listening18,5,1,19
+Historia,Segunda Guerra18,4,3,26
+Matemáticas,Geometría15,4,1,1
+Física,Termodinámica18,1,3,8
+Química,Orgánica18,5,5,18
+Programación,Ordenamiento18,5,5,8
+Inglés,Grammar18,4,3,13
+Historia,Antigüedad18,4,5,23
+Matemáticas,Trigonometría15,5,2,12
+Física,Óptica18,1,4,4
+Química,Estequiometría18,3,4,30
+Programación,Búsqueda18,1,1,27
+Inglés,Vocabulary18,2,3,10
+Historia,Renacimiento18,3,4,26
+Matemáticas,Derivadas15,2,5,16
+Física,Electromagnetismo18,3,4,4
+Química,Electroquímica18,4,4,11
+Programación,POO18,1,3,2
+Inglés,Speaking18,1,1,28
+Historia,Colonización18,3,1,22
+Matemáticas,Integrales15,2,2,17
+Física,Fluidos18,2,5,6
+Química,Termoquímica18,3,5,14
+Programación,Bases de datos18,4,2,26
+dias=30
+horas_por_dia=8
